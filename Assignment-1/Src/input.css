@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.raidal-blue{
+    background: radial-gradient(lightyellow,skyblue);
+}
+
+@media all and (max-width:768px){
+    .cardsl{
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width:425px){
+    .cardsl{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}

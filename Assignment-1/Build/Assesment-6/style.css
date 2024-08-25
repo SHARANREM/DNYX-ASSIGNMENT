@@ -1,0 +1,74 @@
+@property --heading{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #6c8091;
+}
+@property --para{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #d0b200;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+header{
+    margin-bottom: 20px ;
+}
+header h1{
+    margin-left: 2.5%;
+    font-weight: 300;
+}
+.cards{
+    display: grid;
+    width: 95%;
+    margin-left: 2.5%;
+        
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+.card{
+    background-color: white;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    transition: 0.2s ease-in-out;
+    justify-content: center;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+}
+.card h4,a{
+    display: block;
+    width: fit-content;
+    font-weight: 300;
+    margin-left: 8.5%;   
+}
+.card a{
+    margin-top: 7px;
+    text-decoration: none;
+    color: var(--para);
+}
+@media all and (max-width:768px){
+    .cards{
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width:425px){
+    .cards{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
