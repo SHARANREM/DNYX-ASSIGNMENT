@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift;
+}
+body{
+    background-color: #FFB200;
+}
+.container:hover {
+    box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.2); 
+}
+
+.container .middle button:hover {
+    background-color: #ff4dbb; 
+    color: #fff;
+    border: 3px dotted white;
+}
+.container{
+    margin: auto;
+    margin-top: 10px;
+    background-color: #EB5B00;
+    width: 70%;
+    padding: 70px 70px 40px;
+    text-align: justify;
+    border-radius: 100px;
+    transition: .3s ease-out;
+}
+.container:hover{
+    box-shadow: 50px 50px 30px;
+}
+.container .top{
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+.container .middle{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -10px;
+}
+.container .middle button{
+    position: relative;
+    background-color: #E4003A;
+    width: 150px;
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 30px;
+    height: 50px;
+    border: 3px dotted #B60071;
+    transition: .3s ease;
+}
